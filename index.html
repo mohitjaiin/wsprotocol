@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sockets</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Implementation</h1>
+    <button id="ws-open">
+        Open Connection
+    </button>
+    <button id="ws-close">
+        Close Connection
+    </button>
+    <button id="login">
+        Log in
+    </button>
+    <button id="logout">
+        Log out
+    </button>
+    <button id="ws-tk-open">
+        Open Token Connection
+    </button>
+    <div class="input-block">
+        <input type="text" id="ws-thread-input" placeholder="Thread ID">
+        <button id="ws-thread-open">
+            Open Thread Connection
+        </button>
+    </div>
+    <div class="input-block">
+        <input type="text" id="ws-input" placeholder="Type message here...">
+        <button id="ws-send">
+            Send message
+        </button>
+    </div>
+    <pre id="messages"></pre>
+    <script src="/js/app.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Implementation</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Implementation</h1>
+    <div class="button-block">
+        <div>
+            <button id="ws-open">Open WebSocket</button>
+            <p>Opens a WebSocket connection</p>
+        </div>
+        <div>
+            <button id="ws-tk-open">Open WebSocket with Token</button>
+            <p>Opens a WebSocket connection with a token</p>
+        </div>
+        <div>
+            <input id="ws-thread-input" type="text" placeholder="Enter Thread ID">
+            <button id="ws-thread-open">Open with Thread ID</button>
+            <p>Opens a WebSocket connection for a specific thread</p>
+        </div>
+        <div>
+            <button id="ws-close">Close WebSocket</button>
+            <p>Closes the WebSocket connection</p>
+        </div>
+        <div>
+            <button id="login">Login</button>
+            <p>Logs in the user</p>
+        </div>
+        <div>
+            <button id="logout">Logout</button>
+            <p>Logs out the user</p>
+        </div>
+    </div>
+    <div class="input-block">
+        <div>
+            <input id="ws-input" type="text" placeholder="Enter message to send">
+            <button id="ws-send">Send Message</button>
+            
+        </div>
+    </div>
+    <div id="messages" class="messages-block"></div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
